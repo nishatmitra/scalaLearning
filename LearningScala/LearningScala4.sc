@@ -111,5 +111,19 @@ println(archersShip)                              //> Unknown
 // There is MUCH more to learn about Scala. We didn't cover many other collection types, including mutable collections.
 // And we didn't even touch on object-oriented Scala. The book "Learning Scala" from O'Reilly is great if you want to
 // go into more depth - but you've got enough to get through this course for now.
+  
+  val myNumberList = List(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20)
+                                                  //> myNumberList  : List[Int] = List(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,
+                                                  //|  14, 15, 16, 17, 18, 19, 20)
+var divByThreeList = myNumberList.filter( (x: Int) => { x % 3 == 0})
+                                                  //> divByThreeList  : List[Int] = List(3, 6, 9, 12, 15, 18)
+
+for (x <- myNumberList) { if (x % 3 == 0 ) println(x)}
+                                                  //> 3
+                                                  //| 6
+                                                  //| 9
+                                                  //| 12
+                                                  //| 15
+                                                  //| 18
 
 }
